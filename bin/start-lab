@@ -1,0 +1,8 @@
+#!/bin/sh
+
+CHROOT=/root/alpine-x86/
+
+mount -t proc none $CHROOT/proc
+mount -t dev -o bind /dev $CHROOT/dev/
+mount -t dev -o bind /sys $CHROOT/sys/
+chroot $CHROOT /bin/ash

@@ -1,6 +1,6 @@
 include ../Makefile
 
-exercitii=1 2 411 412 421 422 423 424 431 432
+exercitii=1 2 411 412 421 422 423 424 431 432 qsqrt
 
 .PHONY: all clean
 

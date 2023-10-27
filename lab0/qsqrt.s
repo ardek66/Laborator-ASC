@@ -23,13 +23,13 @@ main:
 	movl %eax, x
 	flds x
 	fmul %st
-	fmulp %st(1)
+	fmulp
 	flds l
-	fsubp %st(1)
+	fsubp
 	flds x
-	fmulp %st(1)
+	fmulp
 	fld1
-	fdivp %st(1)
+	fdivp
 	frndint
 	fstps numar
 exit:	
